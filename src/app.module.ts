@@ -3,11 +3,13 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './user/user.module';
+import { LeaguesModule } from './leagues/leagues.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot(),
-    UserModule
+    UserModule,
+    LeaguesModule
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -7,7 +7,7 @@ export class UserController {
   constructor(private usersService: UserService) { }
 
   @Get('all')
-  all(): Promise<User[]> {
+  all(): Promise<any> {
     return this.usersService.getAll();
   }
 }
