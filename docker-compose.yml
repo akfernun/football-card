@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_PASSWORD: footballCard
+      POSTGRES_DB: footballCard
+    ports:
+      - "1234:5432"
+
