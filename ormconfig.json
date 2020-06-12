@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 1234,
+  "username": "postgres",
+  "password": "footballCard",
+  "database": "footballCard",
+  "migrations": ["dist/migration/*.js"],
+  "entities": ["dist/**/*.entity.js"],
+  "synchronize": true,
+  "cli": {
+    "migrationsDir": "src/migration"
+  }
+}
